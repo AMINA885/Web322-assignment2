@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Climate Solutions</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="container mx-auto p-8 space-y-12">
+    <!-- Hero -->
+    <section class="hero bg-base-200 rounded-xl">
+      <div class="hero-content text-center">
+        <div class="max-w-2xl">
+          <h1 class="text-4xl font-bold">About</h1>
+          <p class="py-4 text-lg">All about me</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Grid -->
+    <section class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- Left column: image -->
+      <div>
+        <img src="/img/me.jpg" alt="Me" class="rounded-2xl shadow-xl w-full object-cover" />
+      </div>
+
+      <!-- Right column: text -->
+      <div class="space-y-4">
+        <h2 class="text-2xl font-bold">Hi! I’m Amina Dipoti</h2>
+        <p class="text-lg leading-relaxed">
+          I’m studying <strong>WEB322</strong> and love building clean, modern web apps.
+          I enjoy designing with Tailwind, learning backend development, and exploring
+          creative coding projects that make a positive impact.
+        </p>
+        <p class="text-lg leading-relaxed">
+          In my free time, I like reading, experimenting with CSS designs, and learning about climate solutions.
+        </p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

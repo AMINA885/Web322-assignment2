@@ -1,0 +1,23 @@
+{
+  "name": "assignmnet2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "tw:build": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/main.css --minify",
+  "start": "node server.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "daisyui": "^5.4.5",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.16",
+    "@tailwindcss/typography": "^0.5.19",
+    "tailwindcss": "^4.1.16"
+  }
+}

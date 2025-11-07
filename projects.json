@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Abandoned Farmland Restoration",
+    "sector": "Food and Agriculture",
+    "summary_short": "Restoring degraded farmland.",
+    "intro_short": "Rehabilitate abandoned land to boost biodiversity and soil health.",
+    "impact": "Increases carbon sequestration and resilience.",
+    "feature_img_url": "/img/farm.jpg",
+    "original_source_url": "https://example.com/farm"
+  },
+  {
+    "id": 2,
+    "title": "Alternative Cement",
+    "sector": "Industry",
+    "summary_short": "Lower-carbon cement.",
+    "intro_short": "Cement innovations to reduce CO₂ intensity.",
+    "impact": "Reduces industrial emissions at scale.",
+    "feature_img_url": "/img/cement.jpg",
+    "original_source_url": "https://example.com/cement"
+  },
+  {
+    "id": 3,
+    "title": "Electric Vehicle Expansion",
+    "sector": "Transportation",
+    "summary_short": "Accelerating electric vehicle infrastructure.",
+    "intro_short": "Installing EV charging stations and promoting cleaner transit systems.",
+    "impact": "Reduces emissions from cars and trucks.",
+    "feature_img_url": "/img/farm.jpg",
+    "original_source_url": "https://example.com/ev"
+  },
+  {
+    "id": 4,
+    "title": "Solar Grid Expansion",
+    "sector": "Electricity",
+    "summary_short": "Expanding solar energy generation.",
+    "intro_short": "Installing new solar farms to provide renewable electricity.",
+    "impact": "Reduces fossil fuel dependence for power generation.",
+    "feature_img_url": "/img/farm.jpg",
+    "original_source_url": "https://example.com/solar"
+  },
+  {
+    "id": 5,
+    "title": "Green Building Materials",
+    "sector": "Buildings",
+    "summary_short": "Sustainable architecture innovations.",
+    "intro_short": "Using recycled and eco-friendly materials to construct efficient buildings.",
+    "impact": "Lowers construction waste and energy use in buildings.",
+    "feature_img_url": "/img/cement.jpg",
+    "original_source_url": "https://example.com/greenbuild"
+  }
+]

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Solutions</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="container mx-auto p-8 space-y-12">
+    <!-- Hero -->
+    <section class="hero bg-base-200 rounded-xl shadow-md">
+      <div class="hero-content flex-col text-center">
+        <h1 class="text-4xl font-bold">Explore Climate Projects 🌍</h1>
+        <p class="py-4 text-lg">
+          Discover real-world solutions that help restore our planet and inspire sustainable innovation.
+        </p>
+        <a href="/solutions/projects" class="btn btn-primary mt-2">Browse All Projects</a>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section>
+      <h2 class="text-2xl font-bold mb-6 text-center">Featured Projects</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Project 1 -->
+        <article class="card bg-base-100 shadow-xl hover:shadow-2xl transition">
+          <figure>
+            <img src="/img/farm.jpg" alt="Project 1" class="rounded-t-xl h-56 w-full object-cover" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Abandoned Farmland Restoration</h3>
+            <p>Restoring degraded farmland and biodiversity.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-secondary" href="/solutions/projects/1">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card bg-base-100 shadow-xl hover:shadow-2xl transition">
+          <figure>
+            <img src="/img/cement.jpg" alt="Project 2" class="rounded-t-xl h-56 w-full object-cover" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Alternative Cement</h3>
+            <p>Lower-carbon cement to reduce industrial emissions.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-secondary" href="/solutions/projects/2">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card bg-base-100 shadow-xl hover:shadow-2xl transition">
+          <figure>
+            <img src="/img/farm.jpg" alt="Project 3" class="rounded-t-xl h-56 w-full object-cover" />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title">Green Building Materials</h3>
+            <p>Eco-friendly materials for sustainable construction.</p>
+            <div class="card-actions justify-end">
+              <a class="btn btn-secondary" href="/solutions/projects/5">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

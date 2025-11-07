@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Solutions – Projects</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="container mx-auto p-6 space-y-8">
+    <section class="text-center bg-base-200 rounded-xl p-8">
+      <h1 class="text-4xl font-bold mb-2">Projects Directory</h1>
+      <% if (typeof sector !== 'undefined' && sector) { %>
+        <p>Showing projects in <span class="font-semibold"><%= sector %></span> sector</p>
+      <% } else { %>
+        <p>Browse all climate solutions below</p>
+      <% } %>
+    </section>
+
+    <% if (projects && projects.length > 0) { %>
+      <div class="grid gap-6 md:grid-cols-3">
+        <% projects.forEach(p => { %>
+          <article class="card bg-base-100 shadow-xl">
+            <figure><img src="<%= p.feature_img_url %>" alt="<%= p.title %>"></figure>
+            <div class="card-body">
+              <h2 class="card-title"><%= p.title %></h2>
+              <p><%= p.summary_short %></p>
+              <div class="card-actions justify-end">
+                <a href="/solutions/projects/<%= p.id %>" class="btn btn-secondary">Details</a>
+              </div>
+            </div>
+          </article>
+        <% }) %>
+      </div>
+    <% } else { %>
+      <div class="text-center p-10">
+        <h2 class="text-2xl font-bold text-error">No projects found</h2>
+      </div>
+    <% } %>
+  </div>
+</body>
+</html>

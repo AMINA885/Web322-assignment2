@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dim">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= project.title %> – Climate Solutions</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="container mx-auto p-6 space-y-10">
+
+    <!-- Hero section -->
+    <section class="hero bg-base-200 rounded-xl shadow">
+      <div class="hero-content text-center">
+        <div class="max-w-2xl">
+          <h1 class="text-4xl font-bold"><%= project.title %></h1>
+          <p class="py-4 text-gray-600">
+            Below, you will find detailed information about this project.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project content -->
+    <section class="flex flex-col items-center space-y-6">
+      <img src="<%= project.feature_img_url %>" alt="<%= project.title %>" 
+           class="rounded-xl w-full max-w-2xl shadow-lg border border-base-300" />
+
+      <div class="max-w-3xl space-y-4 text-center">
+        <p class="text-lg"><strong>Summary:</strong> <%= project.intro_short %></p>
+        <p class="text-lg"><strong>Impact:</strong> <%= project.impact %></p>
+
+        <a href="<%= project.original_source_url %>" target="_blank" 
+           class="btn btn-primary mt-4">Learn More</a>
+
+        <p id="quote" class="italic text-gray-500 mt-6"></p>
+
+        <a href="#" onclick="history.back(); return false;" class="btn btn-secondary mt-4">← Back</a>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const res = await fetch("https://dummyjson.com/quotes/random");
+      const data = await res.json();
+      document.getElementById("quote").textContent = `"${data.quote}" — ${data.author}`;
+    });
+  </script>
+</body>
+</html>
