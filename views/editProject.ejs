@@ -1,0 +1,61 @@
+<%- include("partials/navbar") %>
+
+<div class="max-w-3xl mx-auto px-4 py-8">
+
+  <h1 class="text-3xl font-bold mb-6">Edit Project</h1>
+
+  <form method="POST" action="/solutions/editProject" class="space-y-4">
+
+    <input type="hidden" name="id" value="<%= project.id %>">
+
+    <div>
+      <label class="font-bold">Title</label>
+      <input 
+        type="text" 
+        name="title" 
+        class="input input-bordered w-full" 
+        value="<%= project.title %>" 
+        required
+      />
+    </div>
+
+    <div>
+      <label class="font-bold">Featured Image URL</label>
+      <input 
+        type="text" 
+        name="featuredImage" 
+        class="input input-bordered w-full" 
+        value="<%= project.featuredimage %>" 
+        required
+      />
+    </div>
+
+    <div>
+      <label class="font-bold">Sector</label>
+      <input 
+        type="text" 
+        name="sector" 
+        class="input input-bordered w-full"
+        value="<%= project.sector %>"
+        required
+      />
+    </div>
+
+    <div>
+      <label class="font-bold">Description</label>
+      <textarea 
+        name="description" 
+        class="textarea textarea-bordered w-full" 
+        rows="5"
+        required><%= project.description %></textarea>
+    </div>
+
+    <button class="btn btn-primary w-full" type="submit">Save Changes</button>
+  </form>
+
+  <hr class="my-8">
+
+  <a href="/solutions/deleteProject/<%= project.id %>" class="btn btn-error w-full">
+    Delete Project
+  </a>
+</div>

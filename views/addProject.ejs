@@ -1,0 +1,51 @@
+<%- include("partials/navbar") %>
+
+<div class="max-w-3xl mx-auto px-4 py-8">
+
+  <h1 class="text-3xl font-bold mb-6">Add New Project</h1>
+
+  <form method="POST" action="/solutions/addProject" class="space-y-4">
+
+    <div>
+      <label class="font-bold">Title</label>
+      <input 
+        type="text" 
+        name="title" 
+        class="input input-bordered w-full" 
+        required
+      />
+    </div>
+
+    <div>
+      <label class="font-bold">Featured Image URL</label>
+      <input 
+        type="text" 
+        name="featuredImage" 
+        class="input input-bordered w-full" 
+        required
+      />
+    </div>
+
+    <div>
+      <label class="font-bold">Sector</label>
+      <input 
+        type="text" 
+        name="sector" 
+        class="input input-bordered w-full" 
+        required
+      />
+    </div>
+
+    <div>
+      <label class="font-bold">Description</label>
+      <textarea 
+        name="description" 
+        class="textarea textarea-bordered w-full" 
+        rows="5"
+        required></textarea>
+    </div>
+
+    <button class="btn btn-primary w-full" type="submit">Add Project</button>
+  </form>
+
+</div>

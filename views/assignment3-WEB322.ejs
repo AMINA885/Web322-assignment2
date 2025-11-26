@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<div class="container mx-auto py-16 px-4 text-center">
+  <h1 class="text-4xl font-bold mb-4"><%= project.title %></h1>
+
+  <p class="text-gray-600 mb-8">
+    Below, you will find detailed information about this project.
+  </p>
+
+  <img src="<%= project.featuredimage %>" 
+       class="mx-auto rounded-xl shadow-lg mb-8 max-h-[450px] w-auto"
+       alt="<%= project.title %>">
+
+  <div class="bg-white shadow-lg rounded-xl p-8 mx-auto max-w-3xl text-left">
+    <p class="mb-4"><strong>Sector:</strong> <%= project.sector %></p>
+
+    <p class="mb-4"><strong>Description:</strong><br>
+      <%= project.description || "No description available." %>
+    </p>
+
+    <p class="mb-4"><strong>Published:</strong> 
+      <%= project.published ? "Yes" : "No" %>
+    </p>
+  </div>
+
+  <a href="/solutions/projects" 
+     class="mt-6 inline-block px-5 py-2 bg-pink-500 text-white rounded-lg">
+     ← Back
+  </a>
+</div>
+
+<%- include("partials/footer") %>
